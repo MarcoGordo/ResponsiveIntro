@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    min-width: 50vh;
+    min-height: 50vw;
+    font-size: 2rem;
+}
+
+.barralateral{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    color: orangered;
+    width: 50pt;
+    align-items: center;
+    justify-content: center;
+
+    font-family: serif;
+    justify-content: space-around;
+    
+}
+
+.seccion-principal{
+    background-color: blueviolet;
+    color:floralwhite;
+    flex-grow: 1;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+@media (max-width: 640px){
+    body{
+        flex-direction: column-reverse;
+    }
+
+    .barralateral{
+        flex-direction: row;
+        width: 50vw;
+    }
+
+}
